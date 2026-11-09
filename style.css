@@ -1,0 +1,175 @@
+
+/* GENERAL DESIGN */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef2f7;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* MAIN CONTAINER */
+.container {
+    max-width: 650px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #1d4ed8;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666;
+}
+
+/* FIELDSET */
+fieldset {
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #1d4ed8;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* FORM GROUP */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* INPUTS */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b6bcc8;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* FOCUS EFFECT */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1d4ed8;
+    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.15);
+}
+
+/* RADIO AND CHECKBOX */
+.options label,
+.agreement label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    accent-color: #1d4ed8;
+    cursor: pointer;
+}
+
+/* AGREEMENT */
+.agreement {
+    margin: 20px 0;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    gap: 12px;
+}
+
+button {
+    flex: 1;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.register-btn {
+    background: #1d4ed8;
+    color: white;
+}
+
+.register-btn:hover {
+    background: #1e40af;
+}
+
+.clear-btn {
+    background: #e5e7eb;
+    color: #333;
+}
+
+.clear-btn:hover {
+    background: #d1d5db;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 480px) {
+    .container {
+        padding: 18px;
+        margin: 10px auto;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
